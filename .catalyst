@@ -1,0 +1,8 @@
+# DO NOT commit this file to your repository!
+# This file contains sensitive configuration specific to your local CLI setup.
+# It includes authentication tokens and store-specific information.
+# If using version control, make sure to add .catalyst to your .gitignore file.
+
+[auth]
+storeHash = "5jvmldvpnc"
+accessToken = "4llttm4hf689rpjzyzbz0ipw3960w4v"
