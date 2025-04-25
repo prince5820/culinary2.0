@@ -17,10 +17,10 @@ export default function CustomCarousel({ products, title }: Props) {
   const scrollNext = () => emblaApi?.scrollNext();
 
   return (
-    <div>
-      <div className="mb-6 text-3xl font-semibold">{title}</div>
+    <div className='container mx-auto w-full max-w-[1570px] px-4 sm:px-[15px]'>
+      <div className="mb-6 text-3xl font-semibold container mx-auto w-full max-w-[1570px] px-4 sm:px-[15px]">{title}</div>
       {title === 'Commercial Refrigeration' && (
-        <div className="text-base font-semibold text-[#c91926]">Recommended for you</div>
+        <div className="text-base font-semibold text-[#c91926] container mx-auto w-full max-w-[1570px] px-4 sm:px-[15px]">Recommended for you</div>
       )}
       <div className="relative">
         <div className="overflow-hidden mb-6" ref={emblaRef}>
@@ -49,13 +49,13 @@ export default function CustomCarousel({ products, title }: Props) {
 
         {/* Arrows */}
         <button
-          className="absolute left-0 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black p-2 text-[#fff] shadow"
+          className="hidden md:block absolute left-0 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black p-2 text-[#fff] shadow"
           onClick={scrollPrev}
         >
           <ChevronLeft />
         </button>
         <button
-          className="absolute right-0 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black p-2 text-[#fff] shadow"
+          className="hidden md:block absolute right-0 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black p-2 text-[#fff] shadow"
           onClick={scrollNext}
         >
           <ChevronRight />

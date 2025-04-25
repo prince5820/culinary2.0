@@ -335,11 +335,6 @@ type AssignCartToCustomerResult {
 
 """Scope which describes how to cache the query"""
 enum CacheControlScope {
-  """
-  Private means that query result is available only for the particular user.
-  """
-  PRIVATE
-
   """Public means that query result is available for all users."""
   PUBLIC
 }

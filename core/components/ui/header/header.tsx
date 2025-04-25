@@ -52,9 +52,9 @@ const Header = ({
   logo,
   search,
 }: Props) => (
-  <div className={cn('relative', className)}>
+  <div className={cn('relative w-full fixed bg-white', className)} style={{zIndex: 99999}}>
 
-    <div className='flex items-center justify-between bg-pencil mx-[-54px] px-[54px] py-[4px]'>
+    <div className='flex items-center justify-between bg-pencil py-[4px]'>
       <Image
         alt="Visit Showroom"
         src="https://cdn11.bigcommerce.com/s-5jvmldvpnc/images/stencil/original/image-manager/visit-showroom.png?t=1745297891"

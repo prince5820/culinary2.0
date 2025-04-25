@@ -55,7 +55,7 @@ const Slideshow = ({ className, slides }: Props) => {
     <section
       aria-label="Slideshow"
       aria-roledescription="carousel"
-      className={cn('relative -mx-6 overflow-hidden sm:-mx-10 md:-mx-12 lg:mx-0 slideshow-wrapper', className)}
+      className={cn('relative overflow-hidden container mx-auto w-full max-w-[1570px] px-4 sm:px-[15px] m-[48px_0px]', className)}
     >
       <div ref={emblaRef}>
         <ul className="flex" id="slideshow-slides">
@@ -66,7 +66,7 @@ const Slideshow = ({ className, slides }: Props) => {
               aria-roledescription="slide"
               className="min-w-0 shrink-0 grow-0 basis-full"
             >
-              <div className="relative">
+              <div className="relative rounded-lg overflow-hidden">
                 {slide.image && (
                   <Image
                     alt={slide.image.altText}
@@ -95,7 +95,7 @@ const Slideshow = ({ className, slides }: Props) => {
       </div>
 
       {/* Dots Navigation */}
-      <div className="absolute bottom-12 start-12  transform -translate-x-1/2 flex gap-2">
+      <div className="absolute bottom-12 start-16 transform -translate-x-1/2 flex gap-2">
         {slides.map((_, index) => (
           <button
             key={index}
