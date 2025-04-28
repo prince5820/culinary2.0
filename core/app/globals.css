@@ -7,6 +7,7 @@
     margin: 0 54px;
   }
   .category-nav {
+    position: relative;
     background-color: #f3f4f8;
     border-radius: 8px;
     padding: 8px 0;

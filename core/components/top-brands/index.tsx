@@ -11,7 +11,7 @@ const TopBrands = ({ brands }: Props) => {
   const [emblaRef] = useEmblaCarousel({ loop: true });
 
   return (
-    <section className="mb-12 mt-4 pb-[25px]">
+    <section className="container mx-auto mb-12 mt-4 w-full max-w-[1570px] px-4 pb-[25px] sm:px-[15px]">
       <div className="relative clear-both mx-auto w-full max-w-[1570px] px-[15px]">
         <div className="mb-0 flex items-center justify-between sm:mb-6">
           <h2 className="!m-0 !py-3 !text-xl font-semibold text-[#000000] md:!text-3xl">
@@ -39,35 +39,41 @@ const TopBrands = ({ brands }: Props) => {
           </a>
         </div>
 
-        <div className="overflow-hidden" ref={emblaRef}>
-          <div className="flex gap-4">
-            {brands.map((brand, index) => (
-              <a
-                key={index}
-                href={brand.href}
-                className="group flex h-full flex-col items-center justify-center rounded-lg bg-[#F5F5F5] p-4 transition-all hover:bg-gray-100 hover:shadow-md"
-              >
-                <div className="relative h-32 w-full">
-                  <img
-                    src={brand.img}
-                    alt={brand.name}
-                    loading="lazy"
-                    decoding="async"
-                    className="object-contain object-center mix-blend-darken"
-                    style={{
-                      position: 'absolute',
-                      height: '100%',
-                      width: '100%',
-                      left: 0,
-                      right: 0,
-                      top: 0,
-                      bottom: 0,
-                      color: 'transparent',
-                    }}
-                  />
+        <div className="relative">
+          <div className="mb-6 overflow-hidden" ref={emblaRef}>
+            <div className="flex">
+              {brands.map((brand, index) => (
+                <div>
+                  <div className="w-[215px] min-w-[215px] max-w-[215px] flex-shrink-0 p-4" style={{ width: '100%', display: 'inline-block' }}>
+                    <a
+                      key={index}
+                      href="#"
+                      className="group flex h-full flex-col items-center justify-center rounded-lg bg-[#F5F5F5] p-4 transition-all hover:bg-gray-100 hover:shadow-md"
+                    >
+                      <div className="relative h-32 w-full">
+                        <img
+                          src={brand.img}
+                          alt={brand.name}
+                          loading="lazy"
+                          decoding="async"
+                          className="object-contain object-center mix-blend-darken"
+                          style={{
+                            position: 'absolute',
+                            height: '100%',
+                            width: '100%',
+                            left: 0,
+                            right: 0,
+                            top: 0,
+                            bottom: 0,
+                            color: 'transparent',
+                          }}
+                        />
+                      </div>
+                    </a>
+                  </div>
                 </div>
-              </a>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full bg-[#b90435] px-6 py-10 text-white lg:px-12 xl:px-20 container mx-auto w-full max-w-[1570px] px-4 sm:px-[15px]">
+    <footer className="w-full bg-[#b90435] px-6 py-10 text-white lg:px-12 xl:px-20 container mx-auto max-w-[1570px] px-4 sm:px-[15px]">
       {/* Grid layout for large screens */}
       <div className="mb-10 hidden grid-cols-1 gap-8 md:grid-cols-2 min-[991px]:grid lg:grid-cols-5">
         {/* 1. Logo + Address */}

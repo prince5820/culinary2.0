@@ -55,7 +55,7 @@ const Slideshow = ({ className, slides }: Props) => {
     <section
       aria-label="Slideshow"
       aria-roledescription="carousel"
-      className={cn('relative overflow-hidden container mx-auto w-full max-w-[1570px] px-4 sm:px-[15px] m-[48px_0px]', className)}
+      className={cn('relative w-full overflow-hidden m-[48px_0px]', className)}
     >
       <div ref={emblaRef}>
         <ul className="flex" id="slideshow-slides">
