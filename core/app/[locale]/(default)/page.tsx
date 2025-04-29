@@ -9,6 +9,7 @@ import CustomCarousel from '~/components/custom-carousal';
 import { ProductCardCarousel } from '~/components/product-card-carousel';
 import { ProductCardCarouselFragment } from '~/components/product-card-carousel/fragment';
 import { Slideshow } from '~/components/slideshow';
+import TopBrandsCarousel from '~/components/top-brands';
 
 const HomePageQuery = graphql(
   `
@@ -706,7 +707,8 @@ export default async function Home({ params }: Props) {
             </div>
           </div>
         </section>
-        <section className="mb-12 mt-4 pb-[25px]">
+        <TopBrandsCarousel />
+        {/* <section className="mb-12 mt-4 pb-[25px]">
           <div className="relative clear-both mx-auto w-full max-w-[1570px] px-[15px]">
             <div className="mb-0 flex items-center justify-between sm:mb-6">
               <h2 className="!m-0 !py-3 !text-xl font-semibold text-[#000000] md:!text-3xl">
@@ -936,7 +938,7 @@ export default async function Home({ params }: Props) {
               </a>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </>
   );

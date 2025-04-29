@@ -87,7 +87,7 @@ const Header = ({
     </div>
 
     <div className="container mx-auto w-full max-w-[1570px] sm:px-[15px]">
-      <header className="fixed flex h-[92px] h-auto min-h-[92px] w-full items-center justify-between gap-1 overflow-y-visible bg-white px-4 lg:relative lg:gap-8 2xl:mx-auto 2xl:px-0">
+      <header className="fixed flex h-[92px] left-0 top-0 h-auto min-h-[92px] w-full items-center justify-between gap-1 overflow-y-visible bg-white px-4 lg:relative lg:gap-8 2xl:mx-auto 2xl:px-0">
         <div className="flex items-center gap-2">
           {/* Mobile menu (only visible on mobile) */}
           <div className="lg:hidden">

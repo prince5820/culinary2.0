@@ -40,10 +40,10 @@ export const MobileNav = ({ links, logo }: Props) => {
         </Button>
       </SheetPrimitive.Trigger>
       <SheetPrimitive.Portal>
-        <SheetPrimitive.Overlay className="fixed inset-0 z-50 bg-black/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" />
+        <SheetPrimitive.Overlay className="fixed inset-0 z-50 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0" />
         <SheetPrimitive.Content
           aria-describedby={undefined}
-          className="fixed inset-y-0 left-0 z-50 mt-[92px] h-full w-full bg-white p-6 pt-0 shadow-lg transition ease-in-out data-[state=closed]:duration-300 data-[state=open]:duration-500 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left"
+          className="fixed inset-y-0 left-0 top-0 z-50 mt-[92px] h-full w-full bg-white p-6 pt-0 shadow-lg transition ease-in-out data-[state=closed]:duration-300 data-[state=open]:duration-500 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left"
         >
           <SheetPrimitive.Title asChild>
             <h2 className="sr-only">{t('navigationMenu')}</h2>

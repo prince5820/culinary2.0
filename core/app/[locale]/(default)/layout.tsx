@@ -20,7 +20,7 @@ export default async function DefaultLayout({ params, children }: Props) {
         <Header cart={<Cart />} />
       </Suspense>
 
-      <main className="flex-1 mt-[178px] px-4 2xl:container sm:px-10 lg:px-12 2xl:mx-auto 2xl:px-0">
+      <main className="flex-1 mt-[80px] sm:mt-[80px] md:mt-[80px] lg:mt-[160px] xl:mt-[178px]">
         {children}
       </main>
 
