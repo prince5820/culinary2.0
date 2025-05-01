@@ -17,16 +17,16 @@ export default function CustomCarousel({ products, title }: Props) {
   const scrollNext = () => emblaApi?.scrollNext();
 
   return (
-    <div className='container mx-auto w-full max-w-[1570px] px-4 sm:px-[15px]'>
-      <div className="mb-6 text-3xl font-semibold container mx-auto w-full max-w-[1570px] px-4 sm:px-[15px]">{title}</div>
+    <div className='container mx-auto w-full max-w-[1570px] sm:px-[15px]'>
+      <div className="mb-6 text-3xl font-semibold container mx-auto w-full max-w-[1570px]">{title}</div>
       {title === 'Commercial Refrigeration' && (
-        <div className="text-base font-semibold text-[#c91926] container mx-auto w-full max-w-[1570px] px-4 sm:px-[15px]">Recommended for you</div>
+        <div className="text-base font-semibold text-[#c91926] container mx-auto w-full max-w-[1570px]">Recommended for you</div>
       )}
       <div className="relative">
         <div className="overflow-hidden mb-6" ref={emblaRef}>
           <div className="flex">
             {products.map((product, index) => (
-              <div className="w-[300px] min-w-[300px] max-w-[300px] flex-shrink-0 p-4" key={index}>
+              <div className="w-[300px] min-w-[300px] max-w-[300px] flex-shrink-0 p-2" key={index}>
                 <div className="cursor-pointer rounded-lg border bg-white p-3 shadow transition hover:text-[#d1093f] hover:shadow-md">
                   <a href="#">
                     <img
@@ -49,13 +49,13 @@ export default function CustomCarousel({ products, title }: Props) {
 
         {/* Arrows */}
         <button
-          className="hidden md:block absolute left-0 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black p-2 text-[#fff] shadow"
+          className="hidden md:block absolute left-[-15px] top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black p-2 text-[#fff] shadow"
           onClick={scrollPrev}
         >
           <ChevronLeft />
         </button>
         <button
-          className="hidden md:block absolute right-0 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black p-2 text-[#fff] shadow"
+          className="hidden md:block absolute right-[-15px] top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black p-2 text-[#fff] shadow"
           onClick={scrollNext}
         >
           <ChevronRight />

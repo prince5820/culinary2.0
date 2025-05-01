@@ -87,8 +87,8 @@ const Header = ({
     </div>
 
     <div className="container mx-auto w-full max-w-[1570px] sm:px-[15px]">
-      <header className="fixed flex h-[92px] left-0 top-0 h-auto min-h-[92px] w-full items-center justify-between gap-1 overflow-y-visible bg-white px-4 lg:relative lg:gap-8 2xl:mx-auto 2xl:px-0">
-        <div className="flex items-center gap-2">
+      <header className="fixed left-0 top-0 flex h-[92px] h-auto min-h-[92px] w-full items-center justify-between gap-1 overflow-y-visible bg-white px-4 lg:relative lg:gap-16 2xl:mx-auto 2xl:px-0">
+        <div className="flex items-center gap-4">
           {/* Mobile menu (only visible on mobile) */}
           <div className="lg:hidden">
             <MobileNav links={links} logo={logo} />
@@ -111,14 +111,16 @@ const Header = ({
           </CustomLink>
         </div>
 
-        <div className="lg:search-box hidden shrink grow p-6 lg:items-center">
-          <input type="text" placeholder="What can we help you find?" />
-          <div className="search-icon hover:text-[#000]">{search}</div>
-        </div>
+        <div className="hidden flex-1 items-center justify-center gap-6 px-6 lg:flex">
+          <div className="lg:search-box hidden shrink grow p-6 lg:items-center">
+            <input type="text" placeholder="What can we help you find?" />
+            <div className="search-icon hover:text-[#000]">{search}</div>
+          </div>
 
-        <div className="hidden lg:block">
-          <div className="contact-text">Contact an expert:</div>
-          <div className="contact-number cursor-pointer flex-nowrap">(888) 845-8200</div>
+          <div className="hidden lg:block">
+            <div className="contact-text">Contact an expert:</div>
+            <div className="contact-number cursor-pointer flex-nowrap">(888) 845-8200</div>
+          </div>
         </div>
 
         <div className="flex items-center gap-2 lg:gap-4">
